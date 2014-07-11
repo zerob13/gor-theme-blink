@@ -3,7 +3,8 @@
     "default" : [
         "normalize.css",
         "nprogress.css",
-        "style.css"
+        "style.css",
+	"font-awesome.css"
     ],
    
     "widgets" : {
