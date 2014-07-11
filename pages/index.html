@@ -2,10 +2,13 @@
 description:
 ---
 
+<div id="latest-post" class="container">
+</div>
+
 <ol class="post-list">
 {{# posts_latest }}
 <li class="post-stub post">
-  <a class="js-ajax-link" href="{{url}}"><h3 class="post-stub-title">{{title}} </h3>
+<a class="js-ajax-link" href="{{ site.config.production_url}}{{url}}" title="{{ title }}" ><h3 class="post-stub-title">{{title}} </h3>
           <time class="post-stub-date">{{ date }}</time>
 </a>
 </li>

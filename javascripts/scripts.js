@@ -89,7 +89,9 @@ jQuery(function($) {
             var currentState = History.getState();
             var url = $(this).attr('href');
             var title = $(this).attr('title') || null;
-
+            if (url[url.length-1]!='/') {
+                url=url+'/';
+            }
             // If the requested url is not the current states url push
             // the new state and make the ajax call.
             if (url !== currentState.url.replace(/\/$/, "")) {
