@@ -16,46 +16,40 @@ layout : default
     <footer class="post-footer clearfix">
             <!-- <p class="post-tags"><span>Tagged:</span> {{# page.tagline }} {{/ page.tagline }}</p> -->
             <div class="share">
-                   <a class="icon-twitter" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url  }}{{ page.url }}"
+                   <a class="icon-twitter" href="http://twitter.com/share?text={{ page.title }}&url={{ site.config.production_url  }}{{ page.url }}"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fa fa-twitter"></i>
                 <span class="hidden">Twitter</span>
             </a>
 
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url  }}{{ page.url }}"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.config.production_url  }}{{ page.url }}"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <i class="fa fa-facebook"></i>
                 <span class="hidden">Facebook</span>
             </a>
 
-            <a class="icon-google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
+            <a class="icon-google-plus" href="https://plus.google.com/share?url={{ site.config.production_url }}{{ page.url }}"
                onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                <i class="fa fa-google-plus"></i>
                 <span class="hidden">Google+</span>
             </a>
             </div>
         </footer>
-<div class="pagination">
-      <ul>
-        <ul>
-          {{# page?previous }}
-            <li class="prev"><a href="{{ url }}" title="{{ title }}">&larr; Previous</a></li>
-          {{/ page?previous }}
-          {{^ page?previous }}
-            <li class="prev disabled"><a>&larr; Previous</a></li>
-          {{/ page?previous }}
+<!-- <div class="pagination"> -->
+<!--           {{# page?previous }} -->
+<!--             <a href="{{ url }}" title="{{ title }}"></a> -->
+<!--           {{/ page?previous }} -->
+<!--           {{^ page?previous }} -->
+<!--             <1!-- <a>&larr; Previous</a></li> --1> -->
+<!--           {{/ page?previous }} -->
 
-            <li><a href="/archive">Archive</a></li>
-
-          {{# page?next }}
-            <li class="next"><a href="{{ url }}" title="{{ title }}">Next &rarr;</a></li>
-          {{/ page?next }}
-          {{^ page?next }}
-            <li class="next disabled"><a>Next &rarr;</a>
-          {{/ page?next }}
-        </ul>
-      </ul>
-    </div>
+<!--           {{# page?next }} -->
+<!--             <a href="{{ url }}" title="{{ title }}">Next &rarr;</a> -->
+<!--           {{/ page?next }} -->
+<!--           {{^ page?next }} -->
+<!--             <1!-- <li class="next disabled"><a>Next &rarr;</a> --1> -->
+<!--           {{/ page?next }} -->
+<!--     </div> -->
 
 </article>
 

@@ -36,7 +36,7 @@
       <header class="site-header">
           <div class="container">
               <div class="site-title-wrapper">
-                  <h1 class="site-title"><a class="js-ajax-link" href="{{ site.url }}">{{ site.title }}</a></h1>
+                  <h1 class="site-title"><a class="js-ajax-link" href="{{ site.config.production_url }}">{{ site.title }}</a></h1>
                   <a class="button-square" href="{{ site.url }}/rss.xml"><i class="fa fa-rss"></i></a>
           </div>
           <ul class="site-nav">
@@ -58,7 +58,7 @@
  <footer class="footer">
         <div class="container">
             <div class="site-title-wrapper">
-                <h1 class="site-title"><a class="js-ajax-link" title="{{ site.title }}" href="{{ site.url }}">{{ site.title }}</a></h1>
+                <h1 class="site-title"><a class="js-ajax-link" title="{{ site.title }}" href="{{ site.config.production_url }}">{{ site.title }}</a></h1>
 
                 <a class="button-square button-jump-top js-jump-top" href="#"><i class="fa fa-angle-up"></i></a>
             </div>

@@ -312,10 +312,9 @@ table {
 /* Post Index */
 /* ============================================================ */
 .post-list {
-  border-top: 6px solid #303030;
   list-style: none;
-  margin: 80px 40px 0;
-  padding: 35px 0 0; }
+  margin: 40px 40px 0;
+  padding: 0px 0 0; }
 
 .post-stub {
   border-bottom: 1px dotted #303030;
