@@ -2,11 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>{{ page.title }}</title>
   {{# page.description }}
     <meta name="description" content="{{ . }}">
   {{/ page.description }}
     <meta name="author" content="{{ site.author.name }}">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -26,19 +33,22 @@
   </head>
 
   <body>
-
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="/">{{ site.title }}</a>
-          <ul class="nav">
+  <div id="wrapper">
+      <header class="site-header">
+          <div class="container">
+              <div class="site-title-wrapper">
+                  <h1 class="site-title"><a class="js-ajax-link" href="{{ site.url }}">{{ site.title }}</a></h1>
+                  <a class="button-square" href="{{ site.url }}/rss.xml"><i class="fa fa-rss"></i></a>
+          </div>
+          <ul class="site-nav">
             {{# site.navigation?to_pages }}
               {{> pages_list }}
             {{/ site.navigation?to_pages }}
           </ul>
-        </div>
       </div>
-    </div>
+      </header>
+  </div>
+  
 
     <div class="container">
 

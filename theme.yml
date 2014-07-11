@@ -1,8 +1,9 @@
 {
   "stylesheets" : {
     "default" : [
-      "bootstrap.min.css",
-      "style.css"
+        "normalize.css",
+        "nprogress.css",
+        "style.css"
     ],
    
     "widgets" : {
@@ -13,11 +14,16 @@
 
   "javascripts" : {
     "default" : [
+        "click.js",
+        "jquery.fitvids.js",
+        "jquery.history.js",
+        "nprogress.js",
+        "scripts.js"
     ]
   },
   
   "manifest" : {
-    "author" : "Jacob Thornton and Mark Otto",
-    "website" : "http://twitter.github.com/bootstrap"
+    "author" : "zerob13",
+    "website" : "http://github.com/zerob13"
   }
 }
